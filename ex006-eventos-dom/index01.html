@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM com interaçao</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <form action="#" autocomplete="on">
+        <p>
+            <label for="inum">Numero:</label>
+            <input type="number" name="num" id="inum" autocomplete="on" placeholder="Digite um numero" size="10px">
+        </p>
+        <p>
+            <input type="button" value="+" onclick="somar()">
+        </p>
+        <p>
+            <label for="inum1">Numero:</label>
+            <input type="number" name="num1" id="inum1" autocomplete="on" placeholder="Digite um numero">
+        </p>
+    </form>
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var num = document.getElementById('inum')
+            var num1 = document.querySelector('input#inum1')
+            var res = document.querySelector('div#res')
+            var n1 = Number(num.value)
+            var n2 = Number(num1.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`        
+    }
+    </script>   
+</body>
+</html>

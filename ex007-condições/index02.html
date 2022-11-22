@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiçoes JS</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    <form action="#">
+        <p>
+            <label for="iveloc">Velocidade: </label>
+            <input type="number" name="velo" id="iveloc">km/h
+            <input type="button" value="verificar" onclick="verif()">
+        </p>
+    </form>
+    <div id="resp">
+
+    </div>
+    <script>
+        function verif() {
+            var velo = document.querySelector('input#iveloc')
+            var vel = Number(velo.value)
+            var res = document.querySelector('div#resp')    
+            res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}</strong></p>`
+
+            if (vel > 60) {
+                res.innerHTML += `<p>Você ultrapassou o limite da via de <ins>60km/h</ins>. <strong>MULTADO!</strong></p> `
+            }else {
+               res.innerHTML += `<p>Tudo normal...</p>`
+            }
+
+            res.innerHTML += `Dirija sempre com sinto de segurança`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "UTF-08";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(252, 252, 166);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+section {
+    background-color: white;
+    width: 470px;
+    height: 51vh;    
+
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.288);
+    border-radius: 8px;
+
+    margin: auto;
+}
+
+#caixa {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#msgg {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#imgg {
+    margin-top: 15px;
+    height: 240px;
+    width: 200px;
+    background-color: black;
+    background: url('imagens/dia.img.jpg') no-repeat center right; 
+    background-size: cover;
+
+    border-radius: 50%;
+
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}

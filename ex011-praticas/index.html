@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pratica 02</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="caixa">
+            <form action="#" autocomplete="on">
+                <p>
+                    <label for="inasc">Ano de Nascimento: </label>
+                    <input type="number" name="nasc" id="inasc"
+                    placeholder="xxxx">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="sexo" id="isexm" checked value="M">
+                    <label for="isexo">Masculino</label>
+                    <input type="radio" name="sexo" id="isexof" value="F">
+                    <label for="isexox">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </form>
+
+            <!-- <div id="msgg">
+                <p>Testanado </p>
+            </div>
+
+            <div id="imgg">
+             <img src="#" alt="#">
+            </div> -->
+        </div>
+    </section>
+    <footer>Testando ...</footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando javascript</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-    </style>
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <form action="#">
-        <p>
-            <label for="inum">Numero: </label>
-            <input type="number" name="num" id="inum" placeholder="digite um numero">
-        </p>
-        <p>
-            <input type="button" value="+" onclick="somar()">
-        </p>
-        <p>
-            <label for="inum2">Numero: </label>
-            <input type="number" name="num2" id="inum2" placeholder="digite um numero">
-        </p>
-    </form>
-    <p id="resul">Resultado</p>
-    <script>
-        function somar() {
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section id="caixa">
+        <div>
+            <form action="#" method="post" autocomplete="on">
+                <p>
+                    <label for="iano">Ano De Nascimento: </label>
+                    <input type="number" name="ano" id="iano" placeholder="xxxx" required>
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="masc" checked value="M">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="femi" value="F">
+                    <label for="femi">Feminino</label>
+                </p>
 
-        var n1  = Number(document.getElementById('inum').value)
-        var n2 = Number(document.querySelector('input#inum2').value)
-        var res = document.getElementById('resul')
-        
-        var s = n1 + n2 
-        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
-        }   
-        
-    </script>
+                <p>
+                    <input type="button" value="Verificar" onclick="Verificar()">
+                </p>
+            </form>
+        </div>
+        <div id="ress">
+            <p>Preencha os dados acima</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

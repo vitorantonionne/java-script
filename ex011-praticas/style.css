@@ -20,6 +20,7 @@ body {
 header {
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 25px;
 }
 
 section {
@@ -40,4 +41,9 @@ section {
 
 form > p {
     padding: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 55px;
 }

@@ -12,6 +12,7 @@ html ,body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
     
 }
 
@@ -19,8 +20,13 @@ header {
     text-align: center;
     padding-top: 25px;
     font-size: 22px;
+    margin-bottom: 25px;
 }
 
 section {
     padding: 5px;
+}
+
+#numero {
+    margin-bottom: 15px;
 }

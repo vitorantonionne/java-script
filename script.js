@@ -1,10 +1,10 @@
 let num = document.getElementById('itxtnum')
-let lista = document.getElementById('ilsitas')
+let lista = document.getElementById('ilista')
 let res = document.getElementById('ress')
 let valores = []
 
 function isNumero(n){
-    if(n <= 0 && n <= 100){
+    if(Number(n) > 0 && Number(n) <= 100){
         return true
     }else {
         return false
@@ -12,16 +12,25 @@ function isNumero(n){
 }
 
 function isListas(n , l) {
-    if (Number(l.value) /= -1 ){
+    if (l.indexOf(Number(n)) != -1 ){
         return true
-
+    }else {
+        return false
     }
 }
 
 function add(){
-    if (isNumero(num.value) && !isListas(nu.value, valores)) {
-        alert('tudo ok')
+    if (isNumero(num.value) && !isListas(num.value, valores)) {
+        valores.push(Number(num.value))
+
+        let list = document.createElement('option')
+        list.text = `Numero ${num.value} adicionado`
+        lista.appendChild(list)
+        
+           
     }else {
         alert('verifique dados')
     }
+    num.value = ''
+    num.focus()
 }

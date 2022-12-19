@@ -13,27 +13,27 @@
     </header>
     <section id="caixa">
         <div>
-            <form action="#" method="post" autocomplete="on">
+            <form action="#">
                 <p>
-                    <label for="iano">Ano De Nascimento: </label>
-                    <input type="number" name="ano" id="iano" placeholder="xxxx" required>
-                </p>
-                <p>Sexo:
-                    <input type="radio" name="radsex" id="masc" checked value="M">
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="radsex" id="femi" value="F">
-                    <label for="femi">Feminino</label>
-                </p>
-
-                <p>
-                    <input type="button" value="Verificar" onclick="Verificar()">
+                    <label for="itxtnum">Número (entre 1 e 100):</label>
+                    <input type="number" name="txtnum" id="itxtnum" placeholder="digite um numero" required>
+                    <input type="button" value="Adicionar" onclick="add()">
                 </p>
             </form>
         </div>
+        <div>  
+            <select name="lista" id="ilista" multiple style="width: 150px; height: 130px;">
+
+            </select>
+            <p>
+                <input type="button" value="Finalizar" onclick="finalize()">
+            </p>
+        </div>
         <div id="ress">
-            <p>Preencha os dados acima</p>
+            
         </div>
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -34,3 +34,31 @@ function add(){
     num.value = ''
     num.focus()
 }
+
+function finalize() {
+    if (valores.length == 0){
+        alert('verifique dados')
+    }else {
+        let total = valores.length
+        res.innerHTML = (`<p>Numero total de elementos da lista é ${total}</p>`)
+
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        for (pos in valores){
+            soma += valores[pos]
+            if (valores[pos] > maior){
+                maior = valores[pos]
+            }if (valores[pos] < menor){
+                menor = valores[pos]
+            }
+        }
+        let media = soma/total
+
+        
+        res.innerHTML += (`<p>O maior valor informado foi ${maior}</p>`)
+        res.innerHTML += (`<p>O menor valor informado foi ${menor}</p>`)
+        res.innerHTML += (`<p>Soma dos elementos é ${soma}</p>`)
+        res.innerHTML += (`A media dos elementos é ${media}`)
+    }
+}

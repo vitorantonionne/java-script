@@ -60,5 +60,7 @@ function finalize() {
         res.innerHTML += (`<p>O menor valor informado foi ${menor}</p>`)
         res.innerHTML += (`<p>Soma dos elementos é ${soma}</p>`)
         res.innerHTML += (`A media dos elementos é ${media}`)
+
+        let aara = ''
     }
 }
